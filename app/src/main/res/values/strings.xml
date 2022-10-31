@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Katalog</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="pass">Password</string>
+    <string name="nim">Nim</string>
+    <string name="nama">Nama</string>
+    <string name="password">Password</string>
+</resources>
