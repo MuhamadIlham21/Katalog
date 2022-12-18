@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white">
+        <EditText
+            android:id="@+id/txtLat"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:hint="Lattitude"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+        <EditText
+            android:id="@+id/txtLong"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:hint="Longitude"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+        <Button
+            android:id="@+id/btnCek"
+            android:text="Cek"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:layout_below="@id/ln1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity2"/>
+
+</RelativeLayout>

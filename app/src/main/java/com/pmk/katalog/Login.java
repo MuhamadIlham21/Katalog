@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
 //
 //            if (txtNim.getText().toString().equals(nim) &&
 //                    txtPassword.getText().toString().equals(pass)){
-                startActivity(new Intent(this, Image_picker.class));
+                startActivity(new Intent(this, Home.class));
 //            }else{
 //                Toast.makeText(this, "Username atau Password salah!",
 //                        Toast.LENGTH_SHORT).show();

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_profil"/>
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_toEndOf="@+id/imgProfil"
+        android:layout_marginTop="20dp"
+        android:text="Muhamad Ilham Aji Vachroni"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/Line"
+        android:background="@color/black"
+        android:layout_below="@+id/imgProfil"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        tools:ignore="Orientation" />
+
+    <RelativeLayout
+        android:id="@+id/rvGrid_home1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/Line"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:id="@+id/tvTengah"
+            android:layout_centerInParent="true"
+            android:text="||"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/ln11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@+id/tvTengah"
+            android:background="@drawable/shadow"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_grid"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvMata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Katalog"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ln12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tvTengah"
+            android:background="@drawable/shadow"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_image"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvAnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Akses Gambar"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvGrid_home2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/rvGrid_home1"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:id="@+id/tvTengah2"
+            android:layout_centerInParent="true"
+            android:text="||"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/ln21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@+id/tvTengah2"
+            android:background="@drawable/shadow">
+
+            <ImageView
+                android:id="@+id/imgUmum"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_web"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvUmum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUmum"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="WebView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ln22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tvTengah2"
+            android:background="@drawable/shadow"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_location"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvKulit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Maps"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
